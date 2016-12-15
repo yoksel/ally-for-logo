@@ -1,0 +1,105 @@
+BODY {
+  font: 15px/1.4 Trebuchet Ms, Arial, sans-serif;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+UL {
+  padding: 0;
+  list-style: none;
+}
+
+LI {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #CCC;
+}
+
+IMG {
+  outline: 2px dashed gold;
+}
+
+svg {
+  outline: 2px dashed yellowgreen;
+}
+
+.svg-hidden {
+  position: absolute;
+  left: -100%;
+}
+
+.results {
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.results TH,
+.results TD {
+  padding: 5px;
+  border: 1px solid #555;
+  vertical-align: top;
+  text-align: center;
+}
+
+.results TH {
+  background: #DDD;
+}
+
+.results__sign {
+  font-size: 1.5rem;
+  color: #AAA;
+}
+
+.results__sign--yes {
+  background: hsl(100, 100%, 85%);
+  color: hsl(100, 100%, 30%);
+}
+
+.results__sign--bad {
+  background: hsl(40, 100%, 85%);
+  color: hsl(40, 100%, 30%);
+}
+
+.results__sign--no {
+  background: hsl(10, 100%, 85%);
+  color: hsl(10, 100%, 30%);
+}
+
+.results__sign--question {
+  background: hsl(220, 100%, 85%);
+  color: hsl(220, 100%, 30%);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo {
+  width: 144px;
+  height: 52px;
+  background: url(logo.svg);
+  outline: 2px dashed orange;
+}
+
+.logo--fz0 {
+  font-size: 0;
+}
+
+.logo--tind {
+  text-indent: -1000px;
+  overflow: hidden;
+}

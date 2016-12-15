@@ -1,0 +1,12 @@
+{
+  "name": "Logotypes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Logotypes test page",
+  "devDependencies": {
+    "browser-sync": "2.18.2"
+  },
+  "scripts": {
+    "start": "serve"
+  }
+}
