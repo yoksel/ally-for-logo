@@ -2,7 +2,7 @@ BODY {
   font: 15px/1.4 Trebuchet Ms, Arial, sans-serif;
 }
 
-main {
+.wrapper {
   max-width: 600px;
   margin: 0 auto;
 }
@@ -14,6 +14,9 @@ UL {
 
 LI {
   margin: 0;
+}
+
+.variations__list {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #CCC;
