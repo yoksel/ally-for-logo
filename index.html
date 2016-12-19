@@ -33,110 +33,367 @@
  <div class="wrapper">
    <main class="variations">
 
-     <h1>Logotypes Test Page</h1>
-     <div class="visually-hidden">visually-hidden text</div>
+    <h1>Logotypes Test Page</h1>
+    <!-- <div class="visually-hidden">visually-hidden text</div> -->
 
-     <ul class="variations__list">
-       <li>
-         <h2>Hidden text</h2>
+    <ul class="variations__list">
+      <li>
+        <h2>Hidden text</h2>
 
-         <h3>with font-size</h3>
-         <div class="logo logo--fz0">* This is Company Logo (font-size: 0)</div>
+        <section class="example">
+          <h3>Hidden text with font-size</h3>
+          <div class="logo logo--fz0">* This is Company Logo (font-size: 0)</div>
 
-         <table class="results" aria-hidden="true">
-           <tr>
-             <th>без стилей</th>
-             <th>без картинок</th>
-             <th>при печати</th>
-             <th>для поисковиков</th>
-             <th>для скринридеров</th>
-             <th>для копирования</th>
-             <th>эффекты по наведению</th>
-           </tr>
-           <tr>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--no">нет</td>
-             <td class="results__sign results__sign--bad">плохо</td>
-             <td class="results__sign results__sign--">неизвестно</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--no">нет</td>
-             <td class="results__sign results__sign--yes">да</td>
-           </tr>
-         </table>
+          <h3>Hidden text with text-indent</h3>
+          <div class="logo logo--tind">* This is Company Logo (text-indent)</div>
 
-         <h3>with text-indent</h3>
-         <div class="logo logo--tind">* This is Company Logo (text-indent)</div>
 
-         <table class="results" aria-hidden="true">
-           <tr>
-             <th>без стилей</th>
-             <th>без картинок</th>
-             <th>при печати</th>
-             <th>для поисковиков</th>
-             <th>для скринридеров</th>
-             <th>для копирования</th>
-             <th>эффекты по наведению</th>
-           </tr>
-           <tr>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--no">нет</td>
-             <td class="results__sign results__sign--bad">плохо</td>
-             <td class="results__sign results__sign--">неизвестно</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--no">нет</td>
-             <td class="results__sign results__sign--yes">да</td>
-           </tr>
-         </table>
+          <h3>Hidden text with text-indent + role img</h3>
+          <div class="logo logo--tind" role="img">* This is Company Logo (text-indent + role img)</div>
+
+          <h3>Hidden text with text-indent + role img + aria</h3>
+          <div class="logo logo--tind" role="img" aria-label="* This is Company Logo (text-indent + role img)">* This is Company Logo (text-indent + role img)</div>
+
+
+          <h3>Hidden text with visually-hidden</h3>
+          <div class="logo">
+            <span class="visually-hidden">Company Name</span>
+          </div>
+
+
+          <table class="results" aria-hidden="true">
+            <tr>
+              <th>без стилей</th>
+              <th>без картинок</th>
+              <th>при печати</th>
+              <th>для скринридеров</th>
+              <th>для копирования</th>
+              <th>эффекты по наведению</th>
+            </tr>
+            <tr>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--no">нет</td>
+              <td class="results__sign results__sign--bad">плохо</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--no">нет</td>
+              <td class="results__sign results__sign--yes">да</td>
+            </tr>
+          </table>
+        </section>
+
+         <section class="example">
+           <h3>Hidden text with text-indent + print version</h3>
+
+           <div class="logo logo--tind logo--print">* This is Company Logo (text-indent + print)</div>
+
+           <table class="results" aria-hidden="true">
+             <tr>
+               <th>без стилей</th>
+               <th>без картинок</th>
+               <th>при печати</th>
+               <th>для скринридеров</th>
+               <th>для копирования</th>
+               <th>эффекты по наведению</th>
+             </tr>
+             <tr>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--no">нет</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--no">нет</td>
+               <td class="results__sign results__sign--yes">да</td>
+             </tr>
+           </table>
+         </section>
        </li>
 
        <li>
-         <h2>Img with alt</h2>
+         <h2>Tag Img</h2>
 
-         <img src="logo.svg" alt="* This is Company Logo (img)" width="144" height="52" />
+         <section class="example">
+           <h3>Img without alt</h3>
 
-         <table class="results" aria-hidden="true">
-           <tr>
-             <th>без стилей</th>
-             <th>без картинок</th>
-             <th>при печати</th>
-             <th>для поисковиков</th>
-             <th>для скринридеров</th>
-             <th>для копирования</th>
-             <th>эффекты по наведению</th>
-           </tr>
-           <tr>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--">неизвестно</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--no">нет</td>
-           </tr>
-         </table>
+           <img src="logo.svg" width="144" height="52" />
 
-         <h2>Img without alt</h2>
+           <table class="results" aria-hidden="true">
+             <tr>
+               <th>без стилей</th>
+               <th>без картинок</th>
+               <th>при печати</th>
+               <th>для скринридеров</th>
+               <th>для копирования</th>
+               <th>эффекты по наведению</th>
+             </tr>
+             <tr>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--no">нет</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--no">нет</td>
+             </tr>
+           </table>
+         </section>
 
-         <img src="logo.svg" width="144" height="52" />
+         <section class="example">
+           <h3>Img with alt</h3>
+
+           <img src="logo.svg" alt="* This is Company Logo (img)" width="144" height="52" />
+
+           <table class="results" aria-hidden="true">
+             <tr>
+               <th>без стилей</th>
+               <th>без картинок</th>
+               <th>при печати</th>
+               <th>для скринридеров</th>
+               <th>для копирования</th>
+               <th>эффекты по наведению</th>
+             </tr>
+             <tr>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--no">нет</td>
+             </tr>
+           </table>
+         </section>
        </li>
 
        <li>
          <h2>SVG</h2>
 
-         <h3>with title and desc</h3>
+         <section class="example">
+           <h3>SVG with title and desc (plain)</h3>
 
-         <svg width="144" height="52">
-           <title>* This is Company Logo (SVG Title)</title>
-           <desc>SVG Logo Description</desc>
-           <use xlink:href="#s-logo"></use>
-         </svg>
+           <svg width="144" height="52"  xmlns="http://www.w3.org/2000/svg">
+             <title>* This is Company Logo (SVG Title)</title>
+             <desc>SVG Logo Description</desc>
+             <use xlink:href="#s-logo"></use>
+           </svg>
 
-         <table class="results" aria-hidden="true">
+           <table class="results" aria-hidden="true">
+             <tr>
+               <th>без стилей</th>
+               <th>без картинок</th>
+               <th>при печати</th>
+               <th>для скринридеров</th>
+               <th>для копирования</th>
+               <th>эффекты по наведению</th>
+             </tr>
+             <tr>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--yes">да</td>
+               <td class="results__sign results__sign--bad">
+                  <span class="brwsr brwsr--ff brwsr--yes"></span>
+                  <span class="brwsr brwsr--chrome"></span>
+                  <span class="brwsr brwsr--safari brwsr--yes"></span>
+                  <span class="brwsr brwsr--opera"></span>
+               </td>
+               <td class="results__sign results__sign--no">нет</td>
+               <td class="results__sign results__sign--yes">да</td>
+             </tr>
+           </table>
+         </section>
+
+        <section class="example">
+          <h3>SVG with title and desc + role + aria-labelledby</h3>
+
+          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg"
+           aria-labelledby="svg-title svg-desc" role="img">
+            <title id="svg-title">* This is Company Logo (SVG Title)</title>
+            <desc id="svg-desc">SVG Logo Description</desc>
+            <use xlink:href="#s-logo"></use>
+          </svg>
+
+          <table class="results" aria-hidden="true">
+            <tr>
+              <th>без стилей</th>
+              <th>без картинок</th>
+              <th>при печати</th>
+              <th>для скринридеров</th>
+              <th>для копирования</th>
+              <th>эффекты по наведению</th>
+            </tr>
+           <tr>
+            <td class="results__sign results__sign--yes">да</td>
+            <td class="results__sign results__sign--yes">да</td>
+            <td class="results__sign results__sign--yes">да</td>
+            <td class="results__sign results__sign--bad">
+              <span class="brwsr brwsr--ff brwsr--yes"></span>
+              <span class="brwsr brwsr--chrome brwsr--yes"></span>
+              <span class="brwsr brwsr--safari"></span>
+              <span class="brwsr brwsr--opera brwsr--yes"></span>
+            </td>
+            <td class="results__sign results__sign--no">нет</td>
+            <td class="results__sign results__sign--yes">да</td>
+           </tr>
+          </table>
+        </section>
+
+        <section class="example">
+          <h3>SVG with text</h3>
+
+          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
+             <text y="-10">* This is Company Logo (SVG Text)</text>
+             <use xlink:href="#s-logo"></use>
+          </svg>
+
+          <table class="results" aria-hidden="true">
+            <tr>
+              <th>без стилей</th>
+              <th>без картинок</th>
+              <th>при печати</th>
+              <th>для скринридеров</th>
+              <th>для копирования</th>
+              <th>эффекты по наведению</th>
+            </tr>
+            <tr>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--bad">
+                <span class="brwsr brwsr--ff"></span>
+                <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                <span class="brwsr brwsr--safari brwsr--yes"></span>
+                <span class="brwsr brwsr--opera brwsr--yes"></span>
+              </td>
+              <td class="results__sign results__sign--no">нет</td>
+              <td class="results__sign results__sign--yes">да</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="example">
+          <h3>SVG with text + title & desc</h3>
+
+          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svg-title-2 svg-desc-2">
+            <title id="svg-title-2">* This is Company Logo (SVG Title)</title>
+            <desc id="svg-desc-2">SVG Logo Description</desc>
+             <text y="-10">* This is Company Logo (SVG Text)</text>
+             <use xlink:href="#s-logo"></use>
+          </svg>
+
+          <table class="results" aria-hidden="true">
+            <tr>
+              <th>без стилей</th>
+              <th>без картинок</th>
+              <th>при печати</th>
+              <th>для скринридеров</th>
+              <th>для копирования</th>
+              <th>эффекты по наведению</th>
+            </tr>
+            <tr>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--bad">
+                <span class="brwsr brwsr--ff brwsr--yes"></span>
+                <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                <span class="brwsr brwsr--safari brwsr--yes"></span>
+                <span class="brwsr brwsr--opera brwsr--yes"></span>
+              </td>
+              <td class="results__sign results__sign--no">нет</td>
+              <td class="results__sign results__sign--yes">да</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="example">
+          <h3>SVG with text + role</h3>
+
+          <svg width="144" height="52"  xmlns="http://www.w3.org/2000/svg" role="img">
+             <text y="-10">* This is Company Logo (SVG Text + role img)</text>
+             <use xlink:href="#s-logo"></use>
+          </svg>
+
+          <table class="results" aria-hidden="true">
+            <tr>
+              <th>без стилей</th>
+              <th>без картинок</th>
+              <th>при печати</th>
+              <th>для скринридеров</th>
+              <th>для копирования</th>
+              <th>эффекты по наведению</th>
+            </tr>
+            <tr>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--bad">
+                <span class="brwsr brwsr--ff"></span>
+                <span class="brwsr brwsr--chrome"></span>
+                <span class="brwsr brwsr--safari"></span>
+                <span class="brwsr brwsr--opera"></span>
+              </td>
+              <td class="results__sign results__sign--no">нет</td>
+              <td class="results__sign results__sign--yes">да</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="example">
+          <h3>SVG with text + role + aria-label</h3>
+
+          <svg width="144" height="52"  xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="* This is Company Logo (aria + role img)">
+             <text y="-10">* This is Company Logo (SVG Text + role img -- text)</text>
+             <use xlink:href="#s-logo"></use>
+          </svg>
+
+          <table class="results" aria-hidden="true">
+            <tr>
+              <th>без стилей</th>
+              <th>без картинок</th>
+              <th>при печати</th>
+              <th>для скринридеров</th>
+              <th>для копирования</th>
+              <th>эффекты по наведению</th>
+            </tr>
+            <tr>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--yes">да</td>
+              <td class="results__sign results__sign--bad">
+                <span class="brwsr brwsr--ff brwsr--yes"></span>
+                <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                <span class="brwsr brwsr--safari"></span>
+                <span class="brwsr brwsr--opera brwsr--yes"></span>
+              </td>
+              <td class="results__sign results__sign--no">нет</td>
+              <td class="results__sign results__sign--yes">да</td>
+            </tr>
+          </table>
+        </section>
+      </li>
+
+      <li>
+        <section class="example">
+          <h2>Leony Watson version</h2>
+
+          <svg version="1.1" width="200" height="100" aria-labelledby="title desc">
+            <title id="title">Green rectangle</title>
+            <desc id="desc">A light green rectangle with rounded corners and a dark green border.</desc>
+            <rect width="140" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
+            <text x="70" y="30" font-size="1em" text-anchor="middle" fill="#000000">Company Logo</text>
+          </svg>
+
+           <br>
+
+          <svg version="1.1" width="200" height="100" aria-labelledby="title desc" role="img">
+            <title id="title">Green rectangle</title>
+            <desc id="desc">A light green rectangle with rounded corners and a dark green border.</desc>
+            <rect width="140" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
+            <text x="70" y="30" font-size="1em" text-anchor="middle" fill="#000000">Company Logo</text>
+          </svg>
+
+          <table class="results" aria-hidden="true">
            <tr>
              <th>без стилей</th>
              <th>без картинок</th>
              <th>при печати</th>
-             <th>для поисковиков</th>
              <th>для скринридеров</th>
              <th>для копирования</th>
              <th>эффекты по наведению</th>
@@ -145,80 +402,13 @@
              <td class="results__sign results__sign--yes">да</td>
              <td class="results__sign results__sign--yes">да</td>
              <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--">неизвестно</td>
-             <td class="results__sign results__sign--bad">плохо</td>
-             <td class="results__sign results__sign--no">нет</td>
-             <td class="results__sign results__sign--yes">да</td>
-           </tr>
-         </table>
-
-         <h3>with text</h3>
-         <svg width="144" height="52">
-           <text y="-10">* This is Company Logo (SVG Text)</text>
-           <use xlink:href="#s-logo"></use>
-         </svg>
-
-         <table class="results" aria-hidden="true">
-           <tr>
-             <th>без стилей</th>
-             <th>без картинок</th>
-             <th>при печати</th>
-             <th>для поисковиков</th>
-             <th>для скринридеров</th>
-             <th>для копирования</th>
-             <th>эффекты по наведению</th>
-           </tr>
-           <tr>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--">неизвестно</td>
              <td class="results__sign results__sign--yes">да</td>
              <td class="results__sign results__sign--no">нет</td>
              <td class="results__sign results__sign--yes">да</td>
            </tr>
-         </table>
-
-       </li>
-
-       <li>
-         <h2>Leony Watson version</h2>
-
-         <svg version="1.1" width="200" height="100" aria-labelledby="title desc">
-           <title id="title">Green rectangle</title>
-           <desc id="desc">A light green rectangle with rounded corners and a dark green border.</desc>
-           <rect width="140" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
-           <text x="70" y="30" font-size="1em" text-anchor="middle" fill="#000000">Company Logo</text>
-       </svg>
-
-       <svg version="1.1" width="200" height="100" aria-labelledby="title desc" role="img">
-           <title id="title">Green rectangle</title>
-           <desc id="desc">A light green rectangle with rounded corners and a dark green border.</desc>
-           <rect width="140" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
-           <text x="70" y="30" font-size="1em" text-anchor="middle" fill="#000000">Company Logo</text>
-       </svg>
-
-       <table class="results" aria-hidden="true">
-         <tr>
-           <th>без стилей</th>
-           <th>без картинок</th>
-           <th>при печати</th>
-           <th>для поисковиков</th>
-           <th>для скринридеров</th>
-           <th>для копирования</th>
-           <th>эффекты по наведению</th>
-         </tr>
-         <tr>
-           <td class="results__sign results__sign--yes">да</td>
-           <td class="results__sign results__sign--yes">да</td>
-           <td class="results__sign results__sign--yes">да</td>
-           <td class="results__sign results__sign--">неизвестно</td>
-           <td class="results__sign results__sign--yes">да</td>
-           <td class="results__sign results__sign--no">нет</td>
-           <td class="results__sign results__sign--yes">да</td>
-         </tr>
-       </table>
-       </li>
+          </table>
+        </section>
+      </li>
 
      </ul>
    </main>
