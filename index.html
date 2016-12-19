@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Logotypes Test Page</title>
+  <title>Logotypes Test Page (TAG TITLE)</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -199,41 +199,6 @@
          </section>
 
         <section class="example">
-          <h3>SVG with title and desc + role + aria-labelledby</h3>
-
-          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg"
-           aria-labelledby="svg-title svg-desc" role="img">
-            <title id="svg-title">* This is Company Logo (SVG Title)</title>
-            <desc id="svg-desc">SVG Logo Description</desc>
-            <use xlink:href="#s-logo"></use>
-          </svg>
-
-          <table class="results" aria-hidden="true">
-            <tr>
-              <th>без стилей</th>
-              <th>без картинок</th>
-              <th>при печати</th>
-              <th>для скринридеров</th>
-              <th>для копирования</th>
-              <th>эффекты по наведению</th>
-            </tr>
-           <tr>
-            <td class="results__sign results__sign--yes">да</td>
-            <td class="results__sign results__sign--yes">да</td>
-            <td class="results__sign results__sign--yes">да</td>
-            <td class="results__sign results__sign--bad">
-              <span class="brwsr brwsr--ff brwsr--yes"></span>
-              <span class="brwsr brwsr--chrome brwsr--yes"></span>
-              <span class="brwsr brwsr--safari"></span>
-              <span class="brwsr brwsr--opera brwsr--yes"></span>
-            </td>
-            <td class="results__sign results__sign--no">нет</td>
-            <td class="results__sign results__sign--yes">да</td>
-           </tr>
-          </table>
-        </section>
-
-        <section class="example">
           <h3>SVG with text</h3>
 
           <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
@@ -267,9 +232,9 @@
         </section>
 
         <section class="example">
-          <h3>SVG with text + title & desc</h3>
+          <h3>SVG with text + title & desc + aria-labelledby</h3>
 
-          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svg-title-2 svg-desc-2">
+          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" __aria-labelledby="svg-title-2 svg-desc-2">
             <title id="svg-title-2">* This is Company Logo (SVG Title)</title>
             <desc id="svg-desc-2">SVG Logo Description</desc>
              <text y="-10">* This is Company Logo (SVG Text)</text>
@@ -300,116 +265,7 @@
             </tr>
           </table>
         </section>
-
-        <section class="example">
-          <h3>SVG with text + role</h3>
-
-          <svg width="144" height="52"  xmlns="http://www.w3.org/2000/svg" role="img">
-             <text y="-10">* This is Company Logo (SVG Text + role img)</text>
-             <use xlink:href="#s-logo"></use>
-          </svg>
-
-          <table class="results" aria-hidden="true">
-            <tr>
-              <th>без стилей</th>
-              <th>без картинок</th>
-              <th>при печати</th>
-              <th>для скринридеров</th>
-              <th>для копирования</th>
-              <th>эффекты по наведению</th>
-            </tr>
-            <tr>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--bad">
-                <span class="brwsr brwsr--ff"></span>
-                <span class="brwsr brwsr--chrome"></span>
-                <span class="brwsr brwsr--safari"></span>
-                <span class="brwsr brwsr--opera"></span>
-              </td>
-              <td class="results__sign results__sign--no">нет</td>
-              <td class="results__sign results__sign--yes">да</td>
-            </tr>
-          </table>
-        </section>
-
-        <section class="example">
-          <h3>SVG with text + role + aria-label</h3>
-
-          <svg width="144" height="52"  xmlns="http://www.w3.org/2000/svg"
-          role="img" aria-label="* This is Company Logo (aria + role img)">
-             <text y="-10">* This is Company Logo (SVG Text + role img -- text)</text>
-             <use xlink:href="#s-logo"></use>
-          </svg>
-
-          <table class="results" aria-hidden="true">
-            <tr>
-              <th>без стилей</th>
-              <th>без картинок</th>
-              <th>при печати</th>
-              <th>для скринридеров</th>
-              <th>для копирования</th>
-              <th>эффекты по наведению</th>
-            </tr>
-            <tr>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--bad">
-                <span class="brwsr brwsr--ff brwsr--yes"></span>
-                <span class="brwsr brwsr--chrome brwsr--yes"></span>
-                <span class="brwsr brwsr--safari"></span>
-                <span class="brwsr brwsr--opera brwsr--yes"></span>
-              </td>
-              <td class="results__sign results__sign--no">нет</td>
-              <td class="results__sign results__sign--yes">да</td>
-            </tr>
-          </table>
-        </section>
       </li>
-
-      <li>
-        <section class="example">
-          <h2>Leony Watson version</h2>
-
-          <svg version="1.1" width="200" height="100" aria-labelledby="title desc">
-            <title id="title">Green rectangle</title>
-            <desc id="desc">A light green rectangle with rounded corners and a dark green border.</desc>
-            <rect width="140" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
-            <text x="70" y="30" font-size="1em" text-anchor="middle" fill="#000000">Company Logo</text>
-          </svg>
-
-           <br>
-
-          <svg version="1.1" width="200" height="100" aria-labelledby="title desc" role="img">
-            <title id="title">Green rectangle</title>
-            <desc id="desc">A light green rectangle with rounded corners and a dark green border.</desc>
-            <rect width="140" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
-            <text x="70" y="30" font-size="1em" text-anchor="middle" fill="#000000">Company Logo</text>
-          </svg>
-
-          <table class="results" aria-hidden="true">
-           <tr>
-             <th>без стилей</th>
-             <th>без картинок</th>
-             <th>при печати</th>
-             <th>для скринридеров</th>
-             <th>для копирования</th>
-             <th>эффекты по наведению</th>
-           </tr>
-           <tr>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--yes">да</td>
-             <td class="results__sign results__sign--no">нет</td>
-             <td class="results__sign results__sign--yes">да</td>
-           </tr>
-          </table>
-        </section>
-      </li>
-
      </ul>
    </main>
 
