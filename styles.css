@@ -6,6 +6,7 @@ BODY {
   max-width: 700px;
   min-width: 500px;
   margin: 0 auto;
+  padding-bottom: 3rem;
 }
 
 UL {
