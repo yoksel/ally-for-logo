@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,6 +8,7 @@
   <title>Logotypes Test Page (TAG TITLE)</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <div class="svg-hidden">
@@ -30,263 +33,401 @@
   </div>
 
 
- <div class="wrapper">
-   <main class="variations">
+  <div class="wrapper">
+    <main class="variations">
 
-    <h1>Logotypes Test Page</h1>
-    <!-- <div class="visually-hidden">visually-hidden text</div> -->
+      <h1>Logotypes Test Page</h1>
+      <!-- <div class="visually-hidden">visually-hidden text</div> -->
 
-    <ul class="variations__list">
-      <li>
-        <h2>Hidden text</h2>
+      <ul class="variations__list">
+        <li class="variations__item">
+          <h2>Hidden text</h2>
 
-        <section class="example">
-          <h3>Hidden text with font-size</h3>
-          <div class="logo logo--fz0">* This is Company Logo (font-size: 0)</div>
+          <section class="example">
+            <h3>Hidden text with font-size</h3>
+            <div class="logo logo--fz0">* This is Company Logo (font-size: 0)</div>
 
-          <h3>Hidden text with text-indent</h3>
-          <div class="logo logo--tind">* This is Company Logo (text-indent)</div>
-
-
-          <h3>Hidden text with text-indent + role img</h3>
-          <div class="logo logo--tind" role="img">* This is Company Logo (text-indent + role img)</div>
-
-          <h3>Hidden text with text-indent + role img + aria</h3>
-          <div class="logo logo--tind" role="img" aria-label="* This is Company Logo (text-indent + role img)">* This is Company Logo (text-indent + role img)</div>
+            <h3>Hidden text with text-indent</h3>
+            <div class="logo logo--tind">* This is Company Logo (text-indent)</div>
 
 
-          <h3>Hidden text with visually-hidden</h3>
-          <div class="logo">
-            <span class="visually-hidden">Company Name</span>
-          </div>
+            <h3>Hidden text with text-indent + role img</h3>
+            <div class="logo logo--tind" role="img">* This is Company Logo (text-indent + role img)</div>
 
+            <h3>Hidden text with text-indent + role img + aria</h3>
+            <div class="logo logo--tind" role="img" aria-label="* This is Company Logo (text-indent + role img)">* This is Company Logo (text-indent + role img)</div>
 
-          <table class="results" aria-hidden="true">
-            <tr>
-              <th>без стилей</th>
-              <th>без картинок</th>
-              <th>при печати</th>
-              <th>для скринридеров</th>
-              <th>для копирования</th>
-              <th>эффекты по наведению</th>
-            </tr>
-            <tr>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--no">нет</td>
-              <td class="results__sign results__sign--bad">плохо</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--no">нет</td>
-              <td class="results__sign results__sign--yes">да</td>
-            </tr>
-          </table>
-        </section>
+            <h3>Hidden text with visually-hidden</h3>
+            <div class="logo">
+              <span class="visually-hidden">Company Name</span>
+            </div>
 
-         <section class="example">
-           <h3>Hidden text with text-indent + print version</h3>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--bad">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--bad">badly</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
 
-           <div class="logo logo--tind logo--print">* This is Company Logo (text-indent + print)</div>
+          <section class="example">
+            <h3>Hidden text with text-indent + print version</h3>
 
-           <table class="results" aria-hidden="true">
-             <tr>
-               <th>без стилей</th>
-               <th>без картинок</th>
-               <th>при печати</th>
-               <th>для скринридеров</th>
-               <th>для копирования</th>
-               <th>эффекты по наведению</th>
-             </tr>
-             <tr>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--no">нет</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--no">нет</td>
-               <td class="results__sign results__sign--yes">да</td>
-             </tr>
-           </table>
-         </section>
-       </li>
+            <div class="logo logo--tind logo--print">* This is Company Logo (text-indent + print)</div>
 
-       <li>
-         <h2>Tag Img</h2>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
+        </li>
 
-         <section class="example">
-           <h3>Img without alt</h3>
+        <li class="variations__item">
+          <h2>Tag Img</h2>
 
-           <img src="logo.svg" width="144" height="52" />
+          <section class="example">
+            <h3>Img without alt</h3>
 
-           <table class="results" aria-hidden="true">
-             <tr>
-               <th>без стилей</th>
-               <th>без картинок</th>
-               <th>при печати</th>
-               <th>для скринридеров</th>
-               <th>для копирования</th>
-               <th>эффекты по наведению</th>
-             </tr>
-             <tr>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--no">нет</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--no">нет</td>
-             </tr>
-           </table>
-         </section>
+            <img src="logo.svg" width="144" height="52" />
 
-         <section class="example">
-           <h3>Img with alt</h3>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+            </ul>
+          </section>
 
-           <img src="logo.svg" alt="* This is Company Logo (img)" width="144" height="52" />
+          <section class="example">
+            <h3>Img with alt</h3>
 
-           <table class="results" aria-hidden="true">
-             <tr>
-               <th>без стилей</th>
-               <th>без картинок</th>
-               <th>при печати</th>
-               <th>для скринридеров</th>
-               <th>для копирования</th>
-               <th>эффекты по наведению</th>
-             </tr>
-             <tr>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--no">нет</td>
-             </tr>
-           </table>
-         </section>
-       </li>
+            <img src="logo.svg" alt="* This is Company Logo (img)" width="144" height="52" />
 
-       <li>
-         <h2>SVG</h2>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+            </ul>
+          </section>
+        </li>
 
-         <section class="example">
-           <h3>SVG with title and desc (plain)</h3>
+        <li class="variations__item">
+          <h2>SVG</h2>
 
-           <svg width="144" height="52"  xmlns="http://www.w3.org/2000/svg">
+          <section class="example">
+            <h3>SVG with title and desc (plain)</h3>
+
+            <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
              <title>* This is Company Logo (SVG Title)</title>
              <desc>SVG Logo Description</desc>
              <use xlink:href="#s-logo"></use>
            </svg>
 
-           <table class="results" aria-hidden="true">
-             <tr>
-               <th>без стилей</th>
-               <th>без картинок</th>
-               <th>при печати</th>
-               <th>для скринридеров</th>
-               <th>для копирования</th>
-               <th>эффекты по наведению</th>
-             </tr>
-             <tr>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--yes">да</td>
-               <td class="results__sign results__sign--bad">
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--bad">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--bad">
                   <span class="brwsr brwsr--ff brwsr--yes"></span>
                   <span class="brwsr brwsr--chrome"></span>
                   <span class="brwsr brwsr--safari brwsr--yes"></span>
                   <span class="brwsr brwsr--opera"></span>
-               </td>
-               <td class="results__sign results__sign--no">нет</td>
-               <td class="results__sign results__sign--yes">да</td>
-             </tr>
-           </table>
-         </section>
+                </div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
 
-        <section class="example">
-          <h3>SVG with text</h3>
+          <section class="example">
+            <h3>SVG with title and desc + role</h3>
 
-          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
-             <text y="-10">* This is Company Logo (SVG Text)</text>
-             <use xlink:href="#s-logo"></use>
-          </svg>
+            <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" role="img">
+              <title>* This is Company Logo (SVG Title)</title>
+              <desc>SVG Logo Description</desc>
+              <use xlink:href="#s-logo"></use>
+           </svg>
 
-          <table class="results" aria-hidden="true">
-            <tr>
-              <th>без стилей</th>
-              <th>без картинок</th>
-              <th>при печати</th>
-              <th>для скринридеров</th>
-              <th>для копирования</th>
-              <th>эффекты по наведению</th>
-            </tr>
-            <tr>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--bad">
-                <span class="brwsr brwsr--ff"></span>
-                <span class="brwsr brwsr--chrome brwsr--yes"></span>
-                <span class="brwsr brwsr--safari brwsr--yes"></span>
-                <span class="brwsr brwsr--opera brwsr--yes"></span>
-              </td>
-              <td class="results__sign results__sign--no">нет</td>
-              <td class="results__sign results__sign--yes">да</td>
-            </tr>
-          </table>
-        </section>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--bad">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--bad">
+                  <span class="brwsr brwsr--ff brwsr"></span>
+                  <span class="brwsr brwsr--chrome"></span>
+                  <span class="brwsr brwsr--safari brwsr"></span>
+                  <span class="brwsr brwsr--opera"></span>
+                </div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
 
-        <section class="example">
-          <h3>SVG with text + title & desc + aria-labelledby</h3>
+          <section class="example">
+            <h3>SVG with text</h3>
 
-          <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" __aria-labelledby="svg-title-2 svg-desc-2">
-            <title id="svg-title-2">* This is Company Logo (SVG Title)</title>
-            <desc id="svg-desc-2">SVG Logo Description</desc>
-             <text y="-10">* This is Company Logo (SVG Text)</text>
-             <use xlink:href="#s-logo"></use>
-          </svg>
+            <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#s-logo"></use>
+              <text y="-25" x="50" text-anchor="middle">* This is Company Logo (SVG Text)</text>
+            </svg>
 
-          <table class="results" aria-hidden="true">
-            <tr>
-              <th>без стилей</th>
-              <th>без картинок</th>
-              <th>при печати</th>
-              <th>для скринридеров</th>
-              <th>для копирования</th>
-              <th>эффекты по наведению</th>
-            </tr>
-            <tr>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--yes">да</td>
-              <td class="results__sign results__sign--bad">
-                <span class="brwsr brwsr--ff brwsr--yes"></span>
-                <span class="brwsr brwsr--chrome brwsr--yes"></span>
-                <span class="brwsr brwsr--safari brwsr--yes"></span>
-                <span class="brwsr brwsr--opera brwsr--yes"></span>
-              </td>
-              <td class="results__sign results__sign--no">нет</td>
-              <td class="results__sign results__sign--yes">да</td>
-            </tr>
-          </table>
-        </section>
-      </li>
-     </ul>
-   </main>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--bad">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--bad">
+                  <span class="brwsr brwsr--ff"></span>
+                  <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                  <span class="brwsr brwsr--safari brwsr--yes"></span>
+                  <span class="brwsr brwsr--opera brwsr--yes"></span>
+                </div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
 
-   <footer class="footer" aria-hidden="true">
-     <h2>Links</h2>
+          <section class="example">
+            <h3>SVG with text + title & desc</h3>
 
-     <ul class="footer__list">
+            <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
+              <title id="svg-title">* This is Company Logo (SVG Title)</title>
+              <desc id="svg-desc">SVG Logo Description</desc>
+              <text y="-10">* This is Company Logo (SVG Text)</text>
+              <use xlink:href="#s-logo"></use>
+            </svg>
 
-       <li>
-         <a href="https://www.w3.org/WAI/tutorials/images/">Images Concepts</a>
-       </li>
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--bad">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--bad">
+                  <span class="brwsr brwsr--ff brwsr--yes"></span>
+                  <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                  <span class="brwsr brwsr--safari brwsr--yes"></span>
+                  <span class="brwsr brwsr--opera brwsr--yes"></span>
+                </div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
 
-       <li>
-         <a href="http://wave.webaim.org/">WAVE Web Accessibility Tool</a>
-       </li>
+          <section class="example">
+            <h3>SVG with text + title & desc + aria-labelledby</h3>
 
-       <li>
-         <a href="https://www.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/">Using ARIA to enhance SVG accessibility</a>
-       </li>
-     </ul>
-   </footer>
-   </div>
- </body>
+            <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svg-title-2 svg-desc-2">
+              <title id="svg-title-2">* This is Company Logo (SVG Title)</title>
+              <desc id="svg-desc-2">SVG Logo Description</desc>
+              <text y="-10">* This is Company Logo (SVG Text)</text>
+              <use xlink:href="#s-logo"></use>
+            </svg>
+
+            <ul class="results" aria-hidden="true">
+              <li class="results__item results__item--yes">
+                <div class="results__text">without CSS</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">without images</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">for print</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+              <li class="results__item results__item--bad">
+                <div class="results__text">for screenreaders</div>
+                <div class="results__sign results__sign--bad">
+                  <span class="brwsr brwsr--ff brwsr--yes"></span>
+                  <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                  <span class="brwsr brwsr--safari brwsr--yes"></span>
+                  <span class="brwsr brwsr--opera brwsr--yes"></span>
+                </div>
+              </li>
+              <li class="results__item results__item--no">
+                <div class="results__text">for copy</div>
+                <div class="results__sign results__sign--no">no</div>
+              </li>
+              <li class="results__item results__item--yes">
+                <div class="results__text">hover effects</div>
+                <div class="results__sign results__sign--yes">yes</div>
+              </li>
+            </ul>
+          </section>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="footer" aria-hidden="true">
+      <h2>Links</h2>
+
+      <ul class="footer__list">
+
+        <li class="results__item">
+          <a href="https://www.w3.org/WAI/tutorials/images/">Images Concepts</a>
+        </li>
+        <li class="results__item">
+          <a href="http://wave.webaim.org/">WAVE Web Accessibility Tool</a>
+        </li>
+        <li class="results__item">
+          <a href="https://www.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/">Using ARIA to enhance SVG accessibility</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
 </html>
