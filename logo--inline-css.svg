@@ -2,8 +2,16 @@
     <title>* This is Company Logo (SVG file)</title>
     <desc>SVG Logo Description</desc>
 
+    <style>
+      path {
+        stroke: aqua;
+        stroke-width: 2;
+        fill: #3023AE;
+      }
+    </style>
+
     <defs>
-        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"  id="linearGradient-1">
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
             <stop stop-color="#3023AE" offset="0%"></stop>
             <stop stop-color="#53A0FE" offset="28.1389509%"></stop>
             <stop stop-color="#B4FF2E" offset="48.0703664%"></stop>
