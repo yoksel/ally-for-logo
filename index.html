@@ -62,7 +62,8 @@
               <span class="visually-hidden">Company Name</span>
             </div>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
+              <!-- role="img" is a trick to hide lis from reading in FF. aria-hidden doesn't work -->
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -95,7 +96,7 @@
 
             <div class="logo logo--tind logo--print">* This is Company Logo (text-indent + print)</div>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -132,7 +133,7 @@
 
             <img src="logo.svg" width="144" height="52" />
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -165,7 +166,7 @@
 
             <img src="logo.svg" alt="* This is Company Logo (img)" width="144" height="52" />
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -202,11 +203,11 @@
 
             <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg">
              <title>* This is Company Logo (SVG Title)</title>
-             <desc>SVG Logo Description</desc>
+             <desc>* SVG Logo Description</desc>
              <use xlink:href="#s-logo"></use>
            </svg>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -244,11 +245,11 @@
 
             <svg width="144" height="52" xmlns="http://www.w3.org/2000/svg" role="img">
               <title>* This is Company Logo (SVG Title)</title>
-              <desc>SVG Logo Description</desc>
+              <desc>* SVG Logo Description</desc>
               <use xlink:href="#s-logo"></use>
            </svg>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -264,10 +265,10 @@
               <li class="results__item results__item--bad">
                 <div class="results__text">for screenreaders</div>
                 <div class="results__sign results__sign--bad">
-                  <span class="brwsr brwsr--ff brwsr"></span>
-                  <span class="brwsr brwsr--chrome"></span>
-                  <span class="brwsr brwsr--safari brwsr"></span>
-                  <span class="brwsr brwsr--opera"></span>
+                  <span class="brwsr brwsr--ff brwsr--yes"></span>
+                  <span class="brwsr brwsr--chrome brwsr--yes"></span>
+                  <span class="brwsr brwsr--safari"></span>
+                  <span class="brwsr brwsr--opera brwsr--yes"></span>
                 </div>
               </li>
               <li class="results__item results__item--no">
@@ -289,7 +290,7 @@
               <text y="-25" x="50" text-anchor="middle">* This is Company Logo (SVG Text)</text>
             </svg>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -332,7 +333,7 @@
               <use xlink:href="#s-logo"></use>
             </svg>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -375,7 +376,7 @@
               <use xlink:href="#s-logo"></use>
             </svg>
 
-            <ul class="results" aria-hidden="true">
+            <ul class="results" aria-hidden="true" role="img">
               <li class="results__item results__item--yes">
                 <div class="results__text">without CSS</div>
                 <div class="results__sign results__sign--yes">yes</div>
@@ -411,7 +412,7 @@
       </ul>
     </main>
 
-    <footer class="footer" aria-hidden="true">
+    <footer class="footer" aria-hidden="true" role="img">
       <h2>Links</h2>
 
       <ul class="footer__list">
